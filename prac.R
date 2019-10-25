@@ -4,4 +4,7 @@ tigerTable <- sort(table(tigerData$activity), decreasing = TRUE)
 
 data.frame(Frequency = tigerTable)
 
+
+pdf("pracPlot.pdf")
 barplot(tigerTable, ylab = "Frequency", cex.names = 0.5, las = 2)
+dev.off() 
